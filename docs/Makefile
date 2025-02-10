@@ -18,9 +18,21 @@ help:
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
+
+# Copy documentation files from microservices folders to documentation
 	cp ../microservices/edge_video_analytics_microservice/README.md "$(SOURCEDIR)"/guide/microservices/edge_video_analytics_microservice/README.md
 	cp ../microservices/edge_video_analytics_microservice/GET_STARTED.md "$(SOURCEDIR)"/guide/microservices/edge_video_analytics_microservice/GET_STARTED.md
 	cp ../microservices/edge_video_analytics_microservice/OPENAPI.yml "$(SOURCEDIR)"/guide/microservices/edge_video_analytics_microservice/OPENAPI.yml
+
+# Copy documentation files from sample applications folders to documentation
+	cp ../sample_applications/automated_self_checkout/README.md "$(SOURCEDIR)"/guide/sample_applications/automated_self_checkout/README.md
+	cp ../sample_applications/automated_self_checkout/GET_STARTED.md "$(SOURCEDIR)"/guide/sample_applications/automated_self_checkout/GET_STARTED.md
+
+	cp ../sample_applications/pallet_defect_detection/README.md "$(SOURCEDIR)"/guide/sample_applications/pallet_defect_detection/README.md
+	cp ../sample_applications/pallet_defect_detection/GET_STARTED.md "$(SOURCEDIR)"/guide/sample_applications/pallet_defect_detection/GET_STARTED.md
+
+	cp ../sample_applications/search_image_by_image/README.md "$(SOURCEDIR)"/guide/sample_applications/search_image_by_image/README.md
+	cp ../sample_applications/search_image_by_image/GET_STARTED.md "$(SOURCEDIR)"/guide/sample_applications/search_image_by_image/GET_STARTED.md
 
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
