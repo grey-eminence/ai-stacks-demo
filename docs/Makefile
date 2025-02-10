@@ -14,9 +14,9 @@ help:
 
 .PHONY: help Makefile
 
-cp ../microservices/edge_video_analytics_microservice/README.md %SOURCEDIR%/guide/microservices/edge_video_analytics_microservice/README.md
-cp ../microservices/edge_video_analytics_microservice/GET_STARTED.md %SOURCEDIR%/guide\microservices/edge_video_analytics_microservice/GET_STARTED.md
-cp ../microservices/edge_video_analytics_microservice/OPENAPI.yml %SOURCEDIR%/guide/microservices/edge_video_analytics_microservice/OPENAPI.yml
+cp ../microservices/edge_video_analytics_microservice/README.md "$(SOURCEDIR)"/guide/microservices/edge_video_analytics_microservice/README.md
+cp ../microservices/edge_video_analytics_microservice/GET_STARTED.md "$(SOURCEDIR)"/guide\microservices/edge_video_analytics_microservice/GET_STARTED.md
+cp ../microservices/edge_video_analytics_microservice/OPENAPI.yml "$(SOURCEDIR)"/guide/microservices/edge_video_analytics_microservice/OPENAPI.yml
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
