@@ -13,5 +13,6 @@ Qui est qui ipsum minim tempor quis in enim. Laborum labore nisi mollit aliqua p
 .. toctree::
    :hidden:
 
-   model_registry/intro
-   model_registry/API
+   model_registry_microservice/README
+   model_registry_microservice/GET_STARTED
+   model_registry_microservice/API_reference.rst

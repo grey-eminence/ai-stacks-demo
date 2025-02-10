@@ -13,5 +13,6 @@ Aliquip ipsum non reprehenderit veniam. Consequat esse deserunt duis in ipsum Lo
 .. toctree::
    :hidden:
 
-   data_store/intro
-   data_store/API
+   data_store_microservice/README
+   data_store_microservice/GET_STARTED
+   data_store_microservice/API_reference.rst
