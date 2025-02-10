@@ -1,27 +1,34 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
 project = 'AI Stacks Demo'
 copyright = '2025, Jacek Jankowski'
 author = 'Jacek Jankowski'
-
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+release = '1.0.0'
 
 extensions = []
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+html_theme_options = {
+   "navbar_start": ["navbar-logo"],
+   "logo": {
+      "image_light": "ai-logo.png",
+      "image_dark": "ai-logo.png",
+   },
+   "secondary_sidebar_items": ["page-toc"],
+   "show_prev_next": False,
+   "footer_start": ["copyright"],
+   "footer_end": [],
+   "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/",
+        }
+   ]
+}
 
-
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
-html_theme = 'alabaster'
+html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
+
+html_css_files = [
+    'css/custom.css',
+]

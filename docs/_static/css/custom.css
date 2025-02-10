@@ -1,0 +1,31 @@
+html {
+    --pst-font-family-base: Montserrat, var(--pst-font-family-base-system);
+    --pst-font-family-heading: Montserrat, var(--pst-font-family-base-system);
+    --pst-font-family-monospace: Courier, var(--pst-font-family-monospace-system);
+}
+
+.navbar {
+    background: #0054ae !important;
+    color: white;
+}
+
+.theme-switch {
+    color: white  !important;
+}
+
+.bd-links__title {
+    display: none;
+}
+
+.bd-navbar-elements {
+    display: none !important;
+}
+
+.bd-sidebar-primary {
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+html[data-theme=light] {
+    --pst-color-primary: #0054ae;
+}
