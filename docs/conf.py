@@ -3,7 +3,7 @@ copyright = '2025, Jacek Jankowski'
 author = 'Jacek Jankowski'
 release = '1.0.0'
 
-extensions = []
+extensions = ['myst_parser', 'sphinxcontrib.openapi']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
