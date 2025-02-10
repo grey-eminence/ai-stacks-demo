@@ -25,7 +25,29 @@ if errorlevel 9009 (
 
 if "%1" == "" goto help
 
+
+REM Copy documentation files from microservices folders to documentation
+
+copy ..\microservices\edge_video_analytics_microservice\README.md %SOURCEDIR%\guide\microservices\edge_video_analytics_microservice\README.md
+copy ..\microservices\edge_video_analytics_microservice\GET_STARTED.md %SOURCEDIR%\guide\microservices\edge_video_analytics_microservice\GET_STARTED.md
+copy ..\microservices\edge_video_analytics_microservice\OPENAPI.yml %SOURCEDIR%\guide\microservices\edge_video_analytics_microservice\OPENAPI.yml
+
+REM Copy documentation files from sample applications folders to documentation
+
+copy ..\sample_applications\automated_self_checkout\README.md %SOURCEDIR%\guide\sample_applications\automated_self_checkout\README.md
+copy ..\sample_applications\automated_self_checkout\GET_STARTED.md %SOURCEDIR%\guide\sample_applications\automated_self_checkout\GET_STARTED.md
+
+copy ..\sample_applications\pallet_defect_detection\README.md %SOURCEDIR%\guide\sample_applications\pallet_defect_detection\README.md
+copy ..\sample_applications\pallet_defect_detection\GET_STARTED.md %SOURCEDIR%\guide\sample_applications\pallet_defect_detection\GET_STARTED.md
+
+copy ..\sample_applications\search_image_by_image\README.md %SOURCEDIR%\guide\sample_applications\search_image_by_image\README.md
+copy ..\sample_applications\search_image_by_image\GET_STARTED.md %SOURCEDIR%\guide\sample_applications\search_image_by_image\GET_STARTED.md
+
+
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+
+copy _static\redirect.html %BUILDDIR%\html\index.html
+
 goto end
 
 :help
