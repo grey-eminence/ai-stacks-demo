@@ -24,6 +24,14 @@ help:
 	cp ../microservices/edge_video_analytics_microservice/GET_STARTED.md "$(SOURCEDIR)"/guide/microservices/edge_video_analytics_microservice/GET_STARTED.md
 	cp ../microservices/edge_video_analytics_microservice/OPENAPI.yml "$(SOURCEDIR)"/guide/microservices/edge_video_analytics_microservice/OPENAPI.yml
 
+	cp ../microservices/data_store_microservice/README.md "$(SOURCEDIR)"/guide/microservices/data_store_microservice/README.md
+	cp ../microservices/data_store_microservice/GET_STARTED.md "$(SOURCEDIR)"/guide/microservices/data_store_microservice/GET_STARTED.md
+	cp ../microservices/data_store_microservice/OPENAPI.yml "$(SOURCEDIR)"/guide/microservices/data_store_microservice/OPENAPI.yml
+
+	cp ../microservices/model_registry_microservice/README.md "$(SOURCEDIR)"/guide/microservices/model_registry_microservice/README.md
+	cp ../microservices/model_registry_microservice/GET_STARTED.md "$(SOURCEDIR)"/guide/microservices/model_registry_microservice/GET_STARTED.md
+	cp ../microservices/model_registry_microservice/OPENAPI.yml "$(SOURCEDIR)"/guide/microservices/model_registry_microservice/OPENAPI.yml
+
 # Copy documentation files from sample applications folders to documentation
 	cp ../sample_applications/automated_self_checkout/README.md "$(SOURCEDIR)"/guide/sample_applications/automated_self_checkout/README.md
 	cp ../sample_applications/automated_self_checkout/GET_STARTED.md "$(SOURCEDIR)"/guide/sample_applications/automated_self_checkout/GET_STARTED.md
