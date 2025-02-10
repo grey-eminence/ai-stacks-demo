@@ -9,3 +9,10 @@ AI Suites for Vision
   get-started/introduction
   get-started/quickstart
 
+.. toctree::
+  :hidden:
+  :caption: Sample Applications
+
+  sample_applications/automated_self_checkout
+  sample_applications/pallet_defect_detection
+  sample_applications/search_image_by_image
