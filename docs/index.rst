@@ -7,10 +7,9 @@ Welcome to AI Stacks Demo's documentation!
 ==========================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :hidden:
 
-
+   guide/guide-index
 
 Indices and tables
 ==================
