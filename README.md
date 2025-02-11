@@ -6,7 +6,7 @@ Quis pariatur fugiat duis aliqua exercitation aliqua duis tempor occaecat aliqui
 
 Magna nisi proident aute deserunt eu eu eiusmod Lorem. Velit velit qui laborum tempor enim nisi tempor do magna ea id. In cillum esse ullamco labore culpa ullamco irure. Nulla et labore excepteur elit.
 
-![Sample workflow](docs\guide\get-started\media\arch_drawing.png "Sample workflow")
+![Sample workflow](docs/guide/get-started/media/arch_drawing.png "Sample workflow")
 
 Non duis eu cillum quis in aute cillum elit. Ex amet id enim deserunt consectetur pariatur ut consequat. Irure magna sunt eu dolore pariatur.
 
